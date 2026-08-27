@@ -1,4 +1,4 @@
-package com.tanish.lld.notificationServiceLLD;
+package com.tanish.lld.majorQuestion.notificationServiceLLD;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

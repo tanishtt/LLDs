@@ -92,6 +92,23 @@ class SignatureDecorator extends NotificationDecorator{
     }
 }
 
+class EncryptionDecorator extends NotificationDecorator{
+
+    EncryptionDecorator(Notification notification) {
+        super(notification);
+    }
+    @Override
+    public String getContent(){
+        String content=notification.getContent();
+        StringBuilder encryptedContent=new StringBuilder();
+        for (char c:content.toCharArray()){
+            encryptedContent.append((char)(c+3));
+
+        }
+        return encryptedContent.toString();
+    }
+}
+
 /*
  * ============================================================
  * 2. OBSERVER PATTERN
